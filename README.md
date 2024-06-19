@@ -1,6 +1,6 @@
-#Herança e Polimorfismo
+# Herança e Polimorfismo
 
-#Herança
+## Herança
 é um tipo de associação que permite que uma classe herde todos os dados e comportamentos de oura
 
 Vantagens: reuso e Polimorfismo.
@@ -13,7 +13,7 @@ OBSERVAÇÕES:
 -Herança e extenção( que pode acrescentar mais características)
 - Herança é uma associação entre classe e não entre objetos
 
-#upCasting e downCasting:
+## upCasting e downCasting:
 
 -upCasting:
 Casting da subclasse para superclasse
@@ -24,7 +24,7 @@ Casting da supercalasse para a subclasse
     -palavra instaceof
 Uso comum: métodos que recebem parâmetros genéricos (ex:Equals)
 
-#Sobreposição ou sobrecarga:
+## Sobreposição ou sobrecarga:
 é uma implementação de um método de uma superclasse na subclasse.
 
 é fortemente recomendável usar a anotação @override em um método sobrescrito
@@ -32,7 +32,7 @@ Uso comum: métodos que recebem parâmetros genéricos (ex:Equals)
     -Avisamos ao compilador;
 ![img.png](img.png)
 
-#PALAVRA SUPER
+## PALAVRA SUPER
 
 É possivel chamar a implementação da superclasse usando a palavra super. 
 
@@ -44,7 +44,7 @@ public void withdraw(double amount){
     super.withdraw(amount);
 balance-=2.0;
 
-#CLASSES E MÉTODOS FINAL
+## CLASSES E MÉTODOS FINAL
 
 Palavra chave: final
 
@@ -77,6 +77,25 @@ mútiplas podem ser uma porta de entrada para inconsistências.
 
 PERFORMANCE:atributos de tipo de uma classe final são analisados de forma mais rápida em tempo de execução.
     -Exemplo clássico: String
+
+## Pilares da OOP
+-Encapsulamento;
+-Herança e 
+-Polimorfismo
+
+### POLIMORFISMO 
+Em programação Orientada a Objetos, Polimorfismo é um recurso que permite que váriáveis de um mesmo tipo mais 
+genérico possam apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme 
+cada tipo específico.
+
+![img_2.png](img_2.png)
+
+### Importante entender: 
+- A Associação do tipo específico com o tipo genérico é feita em tempo de execução(upcasting).
+- O compilador não sabe para qual tipo específico a chamada do método Withdraw está sendo feita 
+(ele só sabe que são duas variáveis tipo Account):
+
+![img_3.png](img_3.png)
 
 
 
